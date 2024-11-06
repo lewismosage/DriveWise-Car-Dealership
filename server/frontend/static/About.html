@@ -1,0 +1,166 @@
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="static/bootstrap.min.css">
+  <style>
+   /* Custom styles for the About page */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Header Styling */
+.banner {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #e0f7fa;
+  color: #00796b;
+}
+.banner h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.banner p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Card Styling */
+.card-deck {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  text-align: center;
+  padding: 1rem;
+}
+
+.card .title {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.card p {
+  margin: 0.5rem 0;
+}
+
+.card .email {
+  font-size: 0.9rem;
+  color: #20b2aa;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .card-deck {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    align-items: center; /* Center cards */
+  }
+  
+  .card {
+    width: 90%; /* Full width on small screens */
+    margin: 10px 0; /* Add vertical margin between cards */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    width: 45%; /* Adjust width for medium screens */
+  }
+}
+
+@media (min-width: 1025px) {
+  .card {
+    width: 30%; /* Maintain width for large screens */
+  }
+}
+  </style>
+</head>
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">DriveWise Car Dealership</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger; "href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;"  aria-current="page" href="/about">About Us</a>
+          </li>
+            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="banner" name="about-header">
+    <h1>About Us</h1>
+    <p>Welcome to DriveWise Car Dealership! We are dedicated to providing top-quality vehicles and excellent customer service to car enthusiasts across North America.</p>
+  </div>
+
+  <div class="container">
+    <div class="card-deck">
+      <div class="card">
+        <img src="/static/person3.png" alt="John Doe">
+        <div class="card-body">
+          <p class="title">John Doe</p>
+          <p>Chief Executive Officer</p>
+          <p class="card-text">With over 20 years in the automotive industry, John is committed to providing customers with exceptional quality and service.</p>
+          <p class="email">john.doe@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/static/person2.png" alt="Jane Smith">
+        <div class="card-body">
+          <p class="title">Jane Smith</p>
+          <p>Head of Sales</p>
+          <p class="card-text">Jane has a passion for helping clients find their dream car and ensuring a seamless buying experience.</p>
+          <p class="email">jane.smith@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/static/person3.png" alt="Michael Lee">
+        <div class="card-body">
+          <p class="title">Michael Lee</p>
+          <p>Customer Relations Manager</p>
+          <p class="card-text">Michael's goal is to make every customer interaction a positive one, building long-term relationships with our clients.</p>
+          <p class="email">michael.lee@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
