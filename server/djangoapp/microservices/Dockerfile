@@ -1,10 +1,20 @@
-FROM python:3.9.18-slim-bookworm
+   # server/djangoapp/microservices/Dockerfile
+   FROM python:3.9.18-slim-bookworm
 
+   # Set the working directory
+   WORKDIR /python-docker
 
-WORKDIR /python-docker
+   # Copy the requirements file from the microservices directory
+   COPY microservices/requirements.txt requirements.txt
 
-COPY requirements.txt requirements.txt
-RUN pip3 install -r requirements.txt
-COPY . .
-RUN ls
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+   # Install dependencies
+   RUN pip install --no-cache-dir -r requirements.txt
+
+   # Copy the rest of the application code
+   COPY . .
+
+   # Expose the port your app runs on
+   EXPOSE 8000
+
+   # Command to run the application
+   CMD ["gunicorn", "djangoproj.wsgi:application", "--bind", "0.0.0.0:8000"]
