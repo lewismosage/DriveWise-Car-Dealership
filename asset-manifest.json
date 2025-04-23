@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/DriveWise-Car-Dealership/static/css/main.4a56ac33.css",
-    "main.js": "/DriveWise-Car-Dealership/static/js/main.9202d992.js",
+    "main.js": "/DriveWise-Car-Dealership/static/js/main.42e14fb0.js",
     "static/media/password.png": "/DriveWise-Car-Dealership/static/media/password.adcd6e686448d893855c.png",
     "static/media/email.png": "/DriveWise-Car-Dealership/static/media/email.66cf52f2342f17f1f491.png",
     "static/media/person.png": "/DriveWise-Car-Dealership/static/media/person.7419e33fa2e0a06c620d.png",
     "index.html": "/DriveWise-Car-Dealership/index.html",
     "main.4a56ac33.css.map": "/DriveWise-Car-Dealership/static/css/main.4a56ac33.css.map",
-    "main.9202d992.js.map": "/DriveWise-Car-Dealership/static/js/main.9202d992.js.map"
+    "main.42e14fb0.js.map": "/DriveWise-Car-Dealership/static/js/main.42e14fb0.js.map"
   },
   "entrypoints": [
     "static/css/main.4a56ac33.css",
-    "static/js/main.9202d992.js"
+    "static/js/main.42e14fb0.js"
   ]
 }
